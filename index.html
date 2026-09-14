@@ -9,16 +9,67 @@
 <body>
 
     <header>
-        <h1>[My ToDo List Gweh]</h1>
+        <h1>[My Todo List Gweh]</h1>
     </header>
 
     <div class="layout-wrapper">
-        
-        <!-- Panel Kiri: Daftar Tugas (MAIN) -->
+
         <main class="task-board">
-            <h2>Active Quests (Urutan Deadline)</h2>
+            <h2>Todo List</h2>
+            
+            <!-- Tugas 1 -->
+            <div class="task-card">
+                <div class="task-header">
+                    <input type="checkbox" id="task1">
+                    <label for="task1">
+                        <h3>Praktikum Sistem Operasi (FUSE)</h3>
+                        <div class="task-dates">
+                            <span>Mulai: 14 Sep 2026</span> | <span class="text-urgent">Deadline: 15 Sep 2026</span>
+                        </div>
+                        <span class="badge state-ongoing">On Going</span>
+                    </label>
+                </div>
+                <div class="task-desc">
+                    <p>Membuat custom FUSE filesystem menggunakan bahasa C. Jangan lupa cek referensi Makefile.</p>
+                </div>
+            </div>
+
+            <!-- Tugas 2 -->
+            <div class="task-card">
+                <div class="task-header">
+                    <input type="checkbox" id="task2">
+                    <label for="task2">
+                        <h3>Desain Promo Cendol Susu Dapur Umi</h3>
+                        <div class="task-dates">
+                            <span>Mulai: 15 Sep 2026</span> | <span class="text-urgent">Deadline: 18 Sep 2026</span>
+                        </div>
+                        <span class="badge state-ongoing">On Going</span>
+                    </label>
+                </div>
+                <div class="task-desc">
+                    <p>Bikin logo dan layout materi presentasi media sosial pakai Canva.</p>
+                </div>
+            </div>
+
+            <!-- Tugas 3 (Selesai) -->
+            <div class="task-card completed-card">
+                <div class="task-header">
+                    <input type="checkbox" id="task3" checked>
+                    <label for="task3" class="done">
+                        <h3>Setup Region Konami ID</h3>
+                        <div class="task-dates">
+                            <span>Mulai: 10 Sep 2026</span> | <span>Deadline: 11 Sep 2026</span>
+                        </div>
+                        <span class="badge state-done">Completed</span>
+                    </label>
+                </div>
+                <div class="task-desc">
+                    <p>Ubah region Konami ID untuk main di server Jepang (Formasi 4-2-1-3).</p>
+                </div>
+            </div>
 
         </main>
+
         <aside class="control-panel">
             <section class="add-task">
                 <h2>Deploy New Task</h2>
@@ -48,7 +99,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2026 IF Pemrograman Web - Muhammad Hanif Musyafa (5025251093)</p>
+        <p>&copy; Muhammad Hanif Musyafa (5025251093)</p>
     </footer>
 
 </body>
