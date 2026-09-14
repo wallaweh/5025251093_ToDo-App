@@ -1,79 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shine's ToDo APP</title>
-    <!-- Menghubungkan HTML dengan CSS Eksternal -->
+    <title>Static Task Manager</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Bagian Header -->
     <header>
-        <h1>Shine`s ToDo APP</h1>
+        <h1>[My ToDo List Gweh]</h1>
     </header>
 
-    <!-- Wrapper utama untuk layout dua panel (Flexbox) -->
-    <div class="container">
+    <div class="layout-wrapper">
         
-        <!-- Panel Kiri: Task List (Menggunakan tag semantik MAIN) -->
-        <main class="task-list-panel">
-            <h2>Task List</h2>
-            
-            <!-- Data Dummy Statis -->
-            <div class="task-item">
-                <input type="checkbox" id="task1">
-                <label for="task1">Learn HTML Semantic Elements</label>
-            </div>
-            <div class="task-item">
-                <input type="checkbox" id="task2" checked>
-                <label for="task2" class="completed">Master CSS Flexbox</label>
-            </div>
-            <div class="task-item">
-                <input type="checkbox" id="task3">
-                <label for="task3">Build a Responsive Layout</label>
-            </div>
-            <div class="task-item">
-                <input type="checkbox" id="task4">
-                <label for="task4">Integrate External Styles</label>
-            </div>
+        <!-- Panel Kiri: Daftar Tugas (MAIN) -->
+        <main class="task-board">
+            <h2>Active Quests (Urutan Deadline)</h2>
+
         </main>
-
-        <!-- Panel Kanan: Task Details & Form (Menggunakan tag semantik ASIDE) -->
-        <aside class="right-panel">
-            
-            <section class="task-details">
-                <h2>Task Details</h2>
-                <div class="details-content">
-                    <h3>Master CSS Flexbox</h3>
-                    <p><strong>Status:</strong> Completed</p>
-                    <p><strong>Due:</strong> Tomorrow</p>
-                    <p class="desc-text">Review flex direction, align items, and justify content properties to build the side by side layout.</p>
-                </div>
-            </section>
-
-            <section class="create-task">
-                <h2>Create New Task</h2>
+        <aside class="control-panel">
+            <section class="add-task">
+                <h2>Deploy New Task</h2>
                 <form>
                     <div class="input-group">
-                        <label for="title">Title</label>
-                        <input type="text" id="title" placeholder="Enter task title...">
+                        <label>Task Name</label>
+                        <input type="text" placeholder="Nama tugas..." required>
+                    </div>
+                    <div class="input-group split">
+                        <div>
+                            <label>Start Date</label>
+                            <input type="date" required>
+                        </div>
+                        <div>
+                            <label>Deadline</label>
+                            <input type="date" required>
+                        </div>
                     </div>
                     <div class="input-group">
-                        <label for="desc">Description</label>
-                        <textarea id="desc" placeholder="Enter task details..." rows="4"></textarea>
+                        <label>Description</label>
+                        <textarea placeholder="Detail operasional..." rows="3"></textarea>
                     </div>
-                    <button type="button" class="btn-submit">Add Todo</button>
+                    <button type="button" class="btn-execute">Add Task</button>
                 </form>
             </section>
-
         </aside>
     </div>
 
-    <!-- Bagian Footer -->
     <footer>
-        <p>&copy; 2026 Shine's ToDo APP - Web Programming Assignment</p>
+        <p>&copy; 2026 IF Pemrograman Web - Muhammad Hanif Musyafa (5025251093)</p>
     </footer>
 
 </body>
